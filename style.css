@@ -1,4 +1,15 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 
+.test{
+	width:auto;
+	height: 40px;
+}
+	.testee{
+		background-color:bisque;
+		width: 50px;
+		height: 25px;
+	
+}
 * {
 	padding: 0;
 	margin: 0;
@@ -50,7 +61,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid rgb(235, 55, 55);
+	border: 2px solid crimson;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -60,7 +71,7 @@ p {
 }
 .cta:hover {
 	color: white;
-	background-color: rgb(232, 21, 21);
+	background-color: crimson;
 }
 .brand h1 {
 	font-size: 3rem;
@@ -200,7 +211,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/361587016_1398962517352716_4051424686611308195_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEYX2Jzhl1L6XPYP7aoYpdks5-jdhNlISWzn6N2E2UhJakOL61kt1woIuOjXz4CmhE9bYBRoC6S4qV41POXZD-J&_nc_ohc=efaXOroYjM0AX-j_J52&_nc_ht=scontent.fkkc3-1.fna&oh=00_AfCAWfE5ULRcAXhIK1on80BSpkUlJfANG0UsWaQXk95VtQ&oe=6571EFCF);
+	background-image: url(https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/361587016_1398962517352716_4051424686611308195_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEYX2Jzhl1L6XPYP7aoYpdks5-jdhNlISWzn6N2E2UhJakOL61kt1woIuOjXz4CmhE9bYBRoC6S4qV41POXZD-J&_nc_ohc=C4gNBIbXWVAAX8Yik6i&_nc_ht=scontent.fkkc3-1.fna&oh=00_AfB9CMLPLaNS3uzmzWFZmClgpMSdMU-Irz2cMSjMaOFSsg&oe=657BD30F);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -265,25 +276,25 @@ p {
 /* End Hero Section */
 
 /* Services Section */
-/* #services .services {
+#services .services ,.java {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#services .service-top {
+#services .service-top,.java {
 	max-width: 500px;
 	margin: 0 auto;
 }
-#services .service-bottom {
+#services .service-bottom ,.java{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
-#services .service-item {
+#services .service-item ,.java{
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -291,30 +302,42 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(https://scontent.fkkc3-1.fna.fbcdn.net/v/t1.15752-9/377251513_885890509906355_3074881467195234916_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHRnfmo0fp-4q9lH4OWZAr_r6q0FJugmtyvqrQUm6Ca3IEalvfZ-m3UFddm9sKXnT6uTpzAiO0jIGv9FcKeqBuG&_nc_ohc=lpM6rg0qwjgAX8QCFmH&_nc_ht=scontent.fkkc3-1.fna&oh=03_AdRcGYf9YBgluuZ-2d6sETB6cXKPCKYT-1HT2GtzNB2RdQ&oe=6593F608);
+	background-image: url(https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/361587016_1398962517352716_4051424686611308195_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEYX2Jzhl1L6XPYP7aoYpdks5-jdhNlISWzn6N2E2UhJakOL61kt1woIuOjXz4CmhE9bYBRoC6S4qV41POXZD-J&_nc_ohc=TJAFpat5RUkAX9OZRtK&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfA5Wlwf-WtyNw12E87xl3q3VivNLpvnLQaISj5cM3By5A&oe=6575E44F);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
 }
-#services .service-item::after {
+.canvas-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .canvas-wrapper {
+	width: 100%;
+	max-width: 600px;
+	margin: 10px;
+	box-sizing: border-box;
+  }
+#services .service-item::after,.java {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #2acd92 0%, #c1cad3 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.9;
 	z-index: -1;
 }
-#services .service-bottom .icon {
+#services .service-bottom .icon ,.java{
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
 }
-#services .service-item h2 {
+#services .service-item h2 ,.java{
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
@@ -323,7 +346,7 @@ p {
 #services .service-item p {
 	color: white;
 	text-align: left;
-} */
+}
 /* End Services Section */
 
 /* Projects section */
@@ -388,7 +411,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #6a6b6d 0%, #e4f1f6 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.7;
 }
 #projects .project-img img {
@@ -494,7 +517,7 @@ p {
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, rgb(99, 165, 54) 0%, rgb(222, 230, 237) 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 #footer .footer {
 	min-height: 200px;
@@ -624,7 +647,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid rgb(255, 0, 34);
+		border: 10px solid crimson;
 	}
 	#about .col-right {
 		text-align: left;
@@ -700,10 +723,81 @@ p {
 		margin: 1.5%;
 	}
 }
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: b;
-  line-height: 1.8;
-}
 /* End  Media Query For Desktop */
+
+ /* body, html h1, h2, iframe{
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;} */
+    
+  
+	#dogImageContainer {
+		margin-top: 20px;
+	}
+	.box1, .box2{
+	  padding: 20px;
+	  text-align: center;
+	  width: 50%;
+	  margin: 60px auto;
+	  border-radius: 10px;
+	  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px 5px, rgba(0, 0, 0, 0.04) 0px 10px 10px 5px;
+	  background-color: #fff
+	}
+	.box{
+	  padding: 20px;
+	  text-align: center;
+	  width: 23%;
+	  margin: 60px auto;
+	  border-radius: 10px;
+	  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px 5px, rgba(0, 0, 0, 0.04) 0px 10px 10px 5px;
+	  background-color: #fff
+	}
+	/* 555555555555 */
+
+	.box, .box1, .box2,.box3,.box4,.box5,.box6{
+        padding: 20px;
+        text-align: center;
+        width: 50%;
+        margin: 60px auto;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px 5px, rgba(0, 0, 0, 0.04) 0px 10px 10px 5px;
+        background-color: #fff
+      }
+@keyframes chartjs-render-animation {
+	from { opacity: 0.99; }
+	to { opacity: 1; }
+}
+
+.chartjs-render-monitor {
+	animation: chartjs-render-animation 0.001s;
+}
+
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink {
+	position: absolute;
+	direction: ltr;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	pointer-events: none;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.chartjs-size-monitor-expand > div {
+	position: absolute;
+	width: 1000000px;
+	height: 1000000px;
+	left: 0;
+	top: 0;
+}
+
+.chartjs-size-monitor-shrink > div {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	left: 0;
+	top: 0;
+}
